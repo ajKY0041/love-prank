@@ -1,0 +1,59 @@
+<!DOCTYPE html>  <html lang="en">  
+<head>  
+  <meta charset="UTF-8">  
+  <title>Love Prank 😄</title>  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">    <style>  
+    body {  
+      margin: 0;  
+      height: 100vh;  
+      background: #ffe6ec;  
+      display: flex;  
+      flex-direction: column;  
+      justify-content: center;  
+      align-items: center;  
+      font-family: Arial, sans-serif;  
+    }  
+  
+    button {  
+      padding: 12px 22px;  
+      font-size: 16px;  
+      border: none;  
+      border-radius: 8px;  
+      cursor: pointer;  
+      margin: 10px;  
+    }  
+  
+    #yes {  
+      background: #ff4d6d;  
+      color: white;  
+    }  
+  
+    #no {  
+      background: #ccc;  
+      position: relative;  
+    }  
+  
+    #message {  
+      margin-top: 20px;  
+      font-size: 18px;  
+      color: #ff4d6d;  
+      font-weight: bold;  
+    }  
+  </style>  </head>  <body>    <h2>Do you love me? ❤️</h2>  <button id="yes">Yes 💖</button>
+<button id="no">No 😏</button>
+
+  <p id="message"></p>    <script>  
+    // YES button  
+    document.getElementById("yes").onclick = function () {  
+      document.getElementById("message").innerText =  
+      "Sach me? 😍❤️ Mujhe pata hi tha!";  
+    };  
+  
+    // NO button  
+    document.getElementById("no").onclick = function () {  
+      const x = Math.random() * 300 - 150;  
+      const y = Math.random() * 300 - 150;  
+      this.style.transform = "translate(" + x + "px," + y + "px)";  
+    };  
+  </script>  </body>  
+</html>
